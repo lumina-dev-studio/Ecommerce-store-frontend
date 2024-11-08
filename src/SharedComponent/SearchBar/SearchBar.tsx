@@ -7,7 +7,7 @@ const SearchBar = () => {
 
   return (
     <div>
-      <div className={`${!isOpen?'w-full':"w-full"} flex rounded-full border border-gray-200   overflow-hidden   font-[sans-serif]`}>
+      <div className={`${!isOpen?'w-full':"w-full"} flex rounded-full border border-gray-200  bg-white  overflow-hidden   font-[sans-serif]`}>
       <input 
         type="text" 
         placeholder="Search for product" 

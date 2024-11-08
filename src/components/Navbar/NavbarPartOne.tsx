@@ -1,27 +1,36 @@
 
+import { LiaUser } from 'react-icons/lia';
 import SearchNavBar from '../../SharedComponent/SearchBar/SearchBar'
+import { RiMenuFill } from 'react-icons/ri';
 
 const NavbarPartOne = () => {
   return (
-    <div className=" w-[90%] mx-auto h-20 bg-white grid grid-cols-12   ">
+    <div className=" xl:w-[90%] mx-auto h-20 bg-white xl:grid xl:grid-cols-12   ">
        
-    <section className= "col-span-2"  >
-       <div className="flex   justify-between items-center h-full">
-        <div >
-        <h1 className=" text-gray-700 text-[30px] font-bold h-full ps-5 "> Wood Mart.</h1>
+    <section className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
+       <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
+
+       <div className='col-span-2 xl:hidden' >
+       <RiMenuFill className=" text-gray-500 text-[25px] " />
+        </div>
+        <div className='col-span-8 text-center' >
+        <h1 className=" text-gray-700 text-[25px] xl:text-[30px] font-bold h-full ps-5 "> Wood Mart.</h1>
         </div>
     
+        <div className='col-span-2 xl:hidden  flex justify-end' >
+        <LiaUser className="  text-[27px] " />
+         </div>
      
        </div>
        
     </section>
-    <section className="col-span-6  grid items-center h-full ms-10" >
+    <section className="xl:col-span-6 xl:w-full px-5 xl:px-0  grid  items-center h-full xl:ms-10 bg-blue-500/15 xl:bg-blue-500/0 " >
     <SearchNavBar/>
     </section>
-    <section className= {`col-span-2`}>
+    <section className= {`col-span-2 hidden xl:inline`}>
       
 
-      <div className=' flex gap-2 items-center mt-5 ms-5 justify-center'>
+      <div className=' flex gap-2 items-center mt-5 ms-10 justify-end'>
            
            <div>
            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,10 +54,10 @@ const NavbarPartOne = () => {
       
     </section>
     
-    <section className= {`col-span-2`}>
+    <section className= {`col-span-2 hidden xl:inline`}>
       
 
-      <div className=' flex gap-2 items-center mt-5 ms-5 justify-center'>
+      <div className=' flex gap-2 items-center mt-5 ms-5 justify-end'>
            
            <div>
            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
