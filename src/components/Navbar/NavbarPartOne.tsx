@@ -5,7 +5,11 @@ import { RiMenuFill } from 'react-icons/ri';
 
 const NavbarPartOne = () => {
   return (
-    <div className=" xl:w-[90%] mx-auto h-20 bg-white xl:grid xl:grid-cols-12   ">
+
+    <div className='bg-white'>
+
+   
+    <div className=" xl:w-[90%]  mx-auto h-20  xl:grid xl:grid-cols-12   ">
        
     <section className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
        <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
@@ -86,6 +90,7 @@ const NavbarPartOne = () => {
       
     </section>
     
+        </div>
         </div>
   );
 };
