@@ -43,12 +43,12 @@ const PopularCategories = () => {
 
   return (
     <div  className=" mt-[300px] md:mt-0">
-      <SectionTitle title="Popular Categories" />
+      <SectionTitle title="Popular Categories" condition={false} />
        
      
       
       <div>
-        <PopularCategoriesWithSlider data={data}/>
+        <PopularCategoriesWithSlider data={data} />
       </div>
     </div>
   );
