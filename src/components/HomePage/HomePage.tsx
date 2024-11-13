@@ -5,6 +5,10 @@ import BestOffers from "./BestOffers/BestOffers";
 import NewGoods from "./NewGoods/NewGoods";
 import ShoppingEvent from "./ShoppingEvent/ShoppingEvent";
 import HomeAppliance from "./HomeAppliance/HomeAppliance";
+import MicrosoftAccessories from "./MicrosoftAccessories/MicrosoftAccessories";
+import RecentlyViewed from "./RecentlyViewed/RecentlyViewed";
+import OurArticles from "./OurArticles/OurArticles";
+import Description from "@/SharedComponent/Description/Description";
 
 const HomePage = () => {
   return (
@@ -21,6 +25,10 @@ const HomePage = () => {
 
      <Container>
       <HomeAppliance/>
+      <MicrosoftAccessories/>
+      <RecentlyViewed/>
+      <OurArticles/>
+      <Description/>
      </Container>
     
     </div>

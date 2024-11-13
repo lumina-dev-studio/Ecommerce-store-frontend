@@ -4,8 +4,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"; // Import necessary styles
 import { useRef } from "react";
 
-const ShoppingEventPartTow = () => {
-  const data = [1, 2, 3, 4, 5, 6, 7]; // Example data
+const ShoppingEventPartTow = ({data}:any) => {
+  
 
   // Responsive settings for carousel (number of products shown per device size)
   const responsive = {
@@ -53,7 +53,7 @@ const ShoppingEventPartTow = () => {
         arrows={false} // Hide the default navigation arrows
       >
         {/* Loop through the data to create carousel items */}
-        {data.map((item, index) => (
+        {data?.map((item:any, index:any) => (
           <div key={index} className="m-2 bg-white rounded-xl flex gap-2 items-center">
             <section>
               <img
