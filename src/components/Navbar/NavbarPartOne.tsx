@@ -3,7 +3,7 @@ import { LiaUser } from 'react-icons/lia';
 import SearchNavBar from '../../SharedComponent/SearchBar/SearchBar'
 import { RiMenuFill } from 'react-icons/ri';
 
-const NavbarPartOne = () => {
+const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
   return (
 
     <div className='bg-white'>
@@ -14,7 +14,7 @@ const NavbarPartOne = () => {
     <section className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
        <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
 
-       <div className='col-span-2 xl:hidden' >
+       <div onClick={()=>setSmallDeviceSidebarCondition(true)} className='col-span-2 xl:hidden' >
        <RiMenuFill className=" text-gray-500 text-[25px] " />
         </div>
         <div className='col-span-8 text-center' >

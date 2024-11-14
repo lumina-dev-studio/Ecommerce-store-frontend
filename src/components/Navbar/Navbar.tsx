@@ -2,14 +2,14 @@ import NavbarPartOne from "./NavbarPartOne";
 import NavbarPartTow from "./NavbarPartTow";
 
 
-const Navbar = () => {
+const Navbar = ({setSmallDeviceSidebarCondition}:any) => {
 
   return (
 
     <div>
 
    <section>
-    <NavbarPartOne/>
+    <NavbarPartOne setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
     </section>
    
    <section className=" hidden  xl:inline">

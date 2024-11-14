@@ -1,24 +1,25 @@
-// import DashBoardLayout from "@/components/Dahsboard/DashboardLayout";
-// import Navbar from "@/components/Navbar/Navbar";
-// import SideBar from "@/components/SideBar/SideBar";
-// import {Toaster} from "@/components/ui/sonner";
-// import Footer from "@/SharedComponent/Footer/Footer";
+
 
 import Navbar from "@/components/Navbar/Navbar";
+import BottomNavigation from "@/SharedComponent/BottomNavigation/BottomNavigation";
+import SideBar from "@/SharedComponent/SideBar/SideBar";
+import LayoutProvider from "../Provider/LayoutProvider";
 
 
 
 const layout = ({children}: { children: React.ReactNode }) => {
     return (
         <div>
-            {/* <DashBoardLayout> */}
-                <Navbar/>
-                {/* <SideBar> */}
-                    {children}
-                {/* </SideBar> */}
-                {/* <Footer/> */}
-                {/* <Toaster/> */}
-            {/* </DashBoardLayout> */}
+            <LayoutProvider>
+
+            {children}
+            </LayoutProvider>
+         
+            
+                
+               
+
+            
         </div>
     );
 };
