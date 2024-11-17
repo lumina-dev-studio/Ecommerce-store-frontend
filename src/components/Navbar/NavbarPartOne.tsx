@@ -6,16 +6,16 @@ import { RiMenuFill } from 'react-icons/ri';
 const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
   return (
 
-    <div className='bg-white'>
+    <div className='bg-white '>
 
    
-    <div className=" xl:w-[90%]  mx-auto h-20  xl:grid xl:grid-cols-12   ">
+    <div className=" xl:w-[90%]   mx-auto h-20  xl:grid xl:grid-cols-12   ">
        
     <section className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
        <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
 
        <div onClick={()=>setSmallDeviceSidebarCondition(true)} className='col-span-2 xl:hidden' >
-       <RiMenuFill className=" text-gray-500 text-[25px] " />
+       <RiMenuFill className="  text-gray-500 text-[25px] " />
         </div>
         <div className='col-span-8 text-center' >
         <h1 className=" text-gray-700 text-[25px] xl:text-[30px] font-bold h-full ps-5 "> Wood Mart.</h1>

@@ -8,7 +8,7 @@ const Navbar = ({setSmallDeviceSidebarCondition}:any) => {
 
     <div>
 
-   <section>
+   <section >
     <NavbarPartOne setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
     </section>
    
