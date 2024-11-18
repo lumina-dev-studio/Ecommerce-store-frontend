@@ -16,7 +16,7 @@ const NavbarPartTow = () => {
   return (
     <div className=" bg-blue-500/15 h-[70px]">
 
-        <div className=" xl:w-[90%] mx-auto flex 2xl:gap-52 gap-50 justify-between">
+        <div className=" xl:w-[90%] 3xl:w-[60%] mx-auto flex 2xl:gap-52 gap-50  justify-between 3xl:pe-[50px]">
 
         <section className=" flex  items-center gap-3">
             <div  className=" flex items-center pt-3">

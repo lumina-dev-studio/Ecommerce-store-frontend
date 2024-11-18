@@ -2,6 +2,7 @@
 import { LiaUser } from 'react-icons/lia';
 import SearchNavBar from '../../SharedComponent/SearchBar/SearchBar'
 import { RiMenuFill } from 'react-icons/ri';
+import Link from 'next/link';
 
 const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
   return (
@@ -9,7 +10,7 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
     <div className='bg-white '>
 
    
-    <div className=" xl:w-[90%]   mx-auto h-20  xl:grid xl:grid-cols-12   ">
+    <div className=" xl:w-[90%] 3xl:w-[60%]  mx-auto h-20  xl:grid xl:grid-cols-12 3xl:pe-[50px]  ">
        
     <section className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
        <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
@@ -18,7 +19,7 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
        <RiMenuFill className="  text-gray-500 text-[25px] " />
         </div>
         <div className='col-span-8 text-center' >
-        <h1 className=" text-gray-700 text-[25px] xl:text-[30px] font-bold h-full ps-5 "> Wood Mart.</h1>
+        <Link href='/' className=" text-gray-700 text-[25px] xl:text-[30px] font-bold h-full ps-5 3xl:p-0 "> Wood Mart.</Link>
         </div>
     
         <div className='col-span-2 xl:hidden  flex justify-end' >

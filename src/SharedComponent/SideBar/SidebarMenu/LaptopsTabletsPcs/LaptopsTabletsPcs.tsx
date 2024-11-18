@@ -1,34 +1,36 @@
-
+import Link from "next/link";
 import { CgLaptop } from "react-icons/cg";
 import { FaAngleRight } from "react-icons/fa6";
 
-const SidebarLaptopsTabletsPcs = ({setCondition}:any) => {
+interface SidebarLaptopsTabletsPcsProps {
+  setCondition: (condition: { isopen: boolean; condition: string }) => void;
+}
 
-
+const SidebarLaptopsTabletsPcs: React.FC<SidebarLaptopsTabletsPcsProps> = ({ setCondition }) => {
   return (
     <div>
-      <div className="flex items-center pt-3"
-       onMouseEnter={() => setCondition({isopen:true,condition:'LaptopsTabletsPcs'})}
-       onMouseLeave={() => setCondition({isopen:false,condition:''})}
+      <div
+        className="flex items-center pt-3"
+        onMouseEnter={() => setCondition({ isopen: true, condition: "LaptopsTabletsPcs" })}
+        onMouseLeave={() => setCondition({ isopen: false, condition: "" })}
       >
         <div className="rounded-full w-full flex gap-2 p-1 items-center cursor-pointer">
+          {/* Icon */}
           <div className="w-[40px] h-[40px] rounded-full flex justify-center p-2">
             <CgLaptop className="text-black text-[25px]" />
           </div>
 
-          <div
-            className="group-hover:flex justify-between w-full items-center hidden"
-           
-          >
-            <p className="font-[600] text-gray-500 text-[14px] hover:text-blue-500 pe-2">
+          {/* Text and Link */}
+          <div className="group-hover:flex justify-between w-full items-center hidden">
+            <Link
+              href="/productCategory/laptopsTabletsPcs"
+              className="font-[600] text-gray-500 text-[14px] hover:text-blue-500 pe-2"
+            >
               Laptops, Tablets, PCs
-            </p>
+            </Link>
             <FaAngleRight className="text-[13px] text-gray-400" />
           </div>
         </div>
-
-        {/* Show section when condition is true */}
-      
       </div>
     </div>
   );
