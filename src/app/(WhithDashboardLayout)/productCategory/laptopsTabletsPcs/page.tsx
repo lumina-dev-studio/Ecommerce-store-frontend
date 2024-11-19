@@ -1,9 +1,9 @@
-import LaptopsTabletsPcs from "@/components/LaptopsTabletsPcs/LaptopsTabletsPcs";
+import LaptopsTabletsPcsPage from "@/components/LaptopsTabletsPcsPage/LaptopsTabletsPcsPage";
 
 const page = () => {
   return (
     <div>
-      <LaptopsTabletsPcs/>
+      <LaptopsTabletsPcsPage/>
     </div>
   );
 };

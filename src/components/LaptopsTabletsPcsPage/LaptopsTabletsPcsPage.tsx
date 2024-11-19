@@ -1,7 +1,10 @@
 import Container from "@/SharedComponent/Container/Container";
 import LaptopsTabletsPcsBannerSection from "./LaptopsTabletsPcsBannerSection/LaptopsTabletsPcsBannerSection";
 import LaptopsTabletsAndPCs from "./LaptopsTabletsAndPCs/LaptopsTabletsAndPCs";
-import PCsSelectedForYou from "../PCsSelectedForYou/PCsSelectedForYou";
+import PCsSelectedForYou from "./PCsSelectedForYou/PCsSelectedForYou";
+import LaptopsTabletsPcsAdvertisement from "./LaptopsTabletsPcsAdvertisement/LaptopsTabletsPcsAdvertisement";
+import Laptops from "./Laptops/Laptops";
+import Tablets from "./Tablets/Tablets";
 
 const LaptopsTabletsPcs = () => {
   return (
@@ -9,6 +12,9 @@ const LaptopsTabletsPcs = () => {
       <LaptopsTabletsPcsBannerSection/>
       <LaptopsTabletsAndPCs/>
       <PCsSelectedForYou/>
+      <Laptops/>
+      <LaptopsTabletsPcsAdvertisement/>
+      <Tablets/>
     </Container>
   );
 };

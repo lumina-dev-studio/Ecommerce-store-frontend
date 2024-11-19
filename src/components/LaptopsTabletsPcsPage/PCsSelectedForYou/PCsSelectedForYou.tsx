@@ -1,7 +1,7 @@
 import SectionTitle from "@/SharedComponent/SectionTitle/SectionTitle";
 import PCsSelectedForYouPartOne from "./PCsSelectedForYouPartOne/PCsSelectedForYouPartOne";
 import PCsSelectedForYouPartTow from "./PCsSelectedForYouPartTow/PCsSelectedForYouPartTow";
-import { Card } from "../ui/card";
+import { Card } from "../../ui/card";
 import ProductCardImageslider from "@/SharedComponent/ProductCard/ProductCardImageslider";
 import ProductCardPartTow from "@/SharedComponent/ProductCard/ProductCardPartTow";
 
