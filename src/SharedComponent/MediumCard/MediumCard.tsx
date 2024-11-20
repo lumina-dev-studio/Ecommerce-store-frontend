@@ -26,7 +26,7 @@ const MediumCard = ({data}:any) => {
          
             <CardContent className=" mt-5">
 
-                <h3 className=" text-[15px] font-[600] my-3 text-center xl:text-start ">  {data?.title}</h3>
+                <h3 className=" text-[15px] font-[600] my-3 text-center xl:text-start uppercase ">  {data?.title}</h3>
             <ul className="space-y-3 text-[14px] text-center xl:text-start text-gray-500">
               {data?.items.map((item:any, i:any) => (
                 <li key={i} className="hover:text-gray-800 cursor-pointer">

@@ -1,17 +1,19 @@
 import { IoIosHeartEmpty } from "react-icons/io";
 import { LiaUser } from "react-icons/lia";
+import { MdCancel } from "react-icons/md";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
 import { RiMenuFill } from "react-icons/ri";
 
-const BottomNavigation = ({setSmallDeviceSidebarCondition,}:any) => {
+const BottomNavigation = ({setSmallDeviceSidebarCondition,smallDeviceSidebarCondition}:any) => {
   return (
     <div className="fixed bottom-0 lg:hidden left-0 z-50 w-full h-18 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
       <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
         {/* Menu Button */}
-        <button onClick={()=>setSmallDeviceSidebarCondition(true)} type="button" className="inline-flex flex-col items-center justify-center py-3 px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <RiMenuFill className="text-gray-500 text-[25px]" />
+        <button onClick={()=>setSmallDeviceSidebarCondition(!smallDeviceSidebarCondition)} type="button" className="inline-flex flex-col items-center justify-center py-3 px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+       {smallDeviceSidebarCondition? <MdCancel className="text-red-500 text-[25px]"  />:<RiMenuFill className="text-gray-500 text-[25px]" />}   
+         
           <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">
-            Menu
+          {smallDeviceSidebarCondition?"Cancel":"Menu"}  
           </span>
         </button>
 

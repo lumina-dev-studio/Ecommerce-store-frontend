@@ -15,7 +15,7 @@ const LayoutProvider = ({children}:any) => {
     <div>  <Navbar setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
            <SideBar smallDeviceSidebarCondition={smallDeviceSidebarCondition}/>
       {children}
-    <BottomNavigation  setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
+    <BottomNavigation smallDeviceSidebarCondition={smallDeviceSidebarCondition}  setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
     <Footer/>
     </div>
   );
