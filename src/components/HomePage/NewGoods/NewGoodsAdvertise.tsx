@@ -1,10 +1,10 @@
 const NewGoodsAdvertise = () => {
   return (
     <div className=" pt-10">
-   <section className=" w-[300px] rounded-xl bg-green-500 h-[575px]  relative ">
+   <section className=" w-[300px] rounded-xl bg-gradient-to-r from-[#050601] to-[#10484D]  h-[575px]  relative ">
 
     
-   <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-0 rounded-xl"></div>
+   <div className="absolute top-0 left-0 w-full h-full bg-black/10 z-0 rounded-xl"></div>
    
    <div className=" absolute md:top-[10%] md:left-[20%] left-[7%] top-[30%]  z-10 text-center text-white">
    <p className="mt-3 text-[15px] font-bold text-gray-200">

@@ -2,7 +2,7 @@ const HomeSectionPartTow = () => {
     return (
       <div className="h-[450px] space-y-5">
 
-<section className=" bg-pink-300 md:h-[250px] h-[300px]  rounded-lg group ">
+<section className="  bg-gradient-to-r from-[#F2D9DD] to-[#E4C8CA]  md:h-[250px] h-[300px]  rounded-lg group ">
 
                <div className="py-5 px-8  relative">
               <section className=" mt-5 absolute z-10">
@@ -49,7 +49,7 @@ const HomeSectionPartTow = () => {
              </section>
         
         <section className="grid md:grid-cols-2 gap-5">
-          <div className="bg-blue-500 w-full p-5 rounded-lg relative h-[180px] group">
+          <div className=" bg-gradient-to-r from-[#1689DB] to-[#4BB5F6] w-full p-5 rounded-lg relative h-[180px] group">
             {/* Content */}
             <div>
               <section className="mt-5 absolute z-10">
@@ -73,7 +73,7 @@ const HomeSectionPartTow = () => {
             </div>
           </div>
   
-          <div className="bg-yellow-500 w-full p-5 rounded-lg relative h-[180px] group">
+          <div className="bg-gradient-to-r from-[#EEB53B] to-[#E1C531] w-full p-5 rounded-lg relative h-[180px] group">
             {/* Content */}
             <div>
               <section className="mt-5 absolute z-10">

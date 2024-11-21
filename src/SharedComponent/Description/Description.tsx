@@ -8,7 +8,7 @@ const Description = () => {
  const [show,setShow]=useState(false)
 
   return (
-    <Card className="bg-white px-6 py-8  rounded-xl shadow-sm w-full my-10">
+    <Card className="bg-white px-6 py-8  rounded-xl shadow-sm w-full  my-20">
       <h2 className="text-lg md:text-2xl font-semibold text-gray-800 mb-4">
         Online store of household appliances and electronics
       </h2>

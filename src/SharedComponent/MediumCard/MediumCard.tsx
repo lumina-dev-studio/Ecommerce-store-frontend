@@ -14,7 +14,7 @@ const MediumCard = ({data}:any) => {
                 src={data?.image}
                 alt={data?.title}
              
-                className="object-contain"
+                className="w-[200px] h-[200px] object-contain"
               />
             </div>
            
