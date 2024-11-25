@@ -1,11 +1,46 @@
 import SectionTitle from "@/SharedComponent/SectionTitle/SectionTitle";
 import PCsSelectedForYouPartOne from "./PCsSelectedForYouPartOne/PCsSelectedForYouPartOne";
 import PCsSelectedForYouPartTow from "./PCsSelectedForYouPartTow/PCsSelectedForYouPartTow";
-import { Card } from "../../ui/card";
-import ProductCardImageslider from "@/SharedComponent/ProductCard/ProductCardImageslider";
-import ProductCardPartTow from "@/SharedComponent/ProductCard/ProductCardPartTow";
+
+import ProductCard from "@/SharedComponent/ProductCard/ProductCard";
 
 const PCsSelectedForYou = () => {
+  const productdData = [
+    {
+      id:1,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+    {
+      id:2,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+    {
+      id:3,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+   
+
+
+  ]
+     
   return (
     <div className=" my-20">
       <SectionTitle title="PCs Selected for You" condition={true} />
@@ -21,21 +56,7 @@ const PCsSelectedForYou = () => {
         
 
         <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 xl:gap-10 2xl:gap-5 md:gap-20 3xl:gap-10 space-y-5 md:space-y-0">
-        <Card className="w-[250px]  p-3.5 group  shadow-sm border-none relative hover:rounded-b-none hover:scale-105 hover:shadow-xl duration-300 hover:z-20">
-       <ProductCardImageslider/>
-       <ProductCardPartTow/>
-       
-      </Card>
-      <Card className="w-[250px]  p-3.5 group  shadow-sm border-none relative hover:rounded-b-none hover:scale-105 hover:shadow-xl duration-300 hover:z-20">
-       <ProductCardImageslider/>
-       <ProductCardPartTow/>
-       
-      </Card>
-      <Card className="w-[250px]  p-3.5 group shadow-sm border-none relative hover:rounded-b-none  hover:scale-105 hover:shadow-xl duration-300 hover:z-20">
-       <ProductCardImageslider/>
-       <ProductCardPartTow/>
-       
-      </Card>
+        {productdData?.map(data=> <ProductCard data={data} />)}
         </section>
       </div>
     </div>

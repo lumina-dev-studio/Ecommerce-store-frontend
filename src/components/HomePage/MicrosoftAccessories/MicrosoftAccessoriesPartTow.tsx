@@ -1,8 +1,6 @@
 "use client";
 
-import { Card } from "@/components/ui/card";
-import ProductCardImageslider from "@/SharedComponent/ProductCard/ProductCardImageslider";
-import ProductCardPartTwo from "@/SharedComponent/ProductCard/ProductCardPartTow";
+
 
 
 
@@ -10,10 +8,66 @@ import ProductCardPartTwo from "@/SharedComponent/ProductCard/ProductCardPartTow
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"; // Import necessary styles
 import { useRef } from "react";
+import ProductCard from "@/SharedComponent/ProductCard/ProductCard";
 
 const MicrosoftAccessoriesPartTwo = () => {
+  const productdData = [
+    {
+      id:1,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+    {
+      id:2,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+    {
+      id:3,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+    {
+      id:4,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
+    {
+      id:5,
+      images : [
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png", 
+        "/bannar/joypad.png", 
+        "/bannar/camera.png", 
+        "/bannar/headPhone.png"
+    ],
+    price:3000 },
 
-    const data = [1, 2, 3, 4, 5, 6, 7]; // Example data
+
+  ]
+      
+
+  
 
     // Responsive settings for carousel (number of products shown per device size)
     const responsive = {
@@ -69,13 +123,7 @@ const MicrosoftAccessoriesPartTwo = () => {
         arrows={false} // Hide the default navigation arrows
       >
         {/* Loop through the data to create carousel items */}
-        {data.map((item, index) => (
-             <Card className="w-full p-4 group shadow-sm border-none lg:h-[530px] xl:h-[550px] relative hover:rounded-b-none hover:scale-105 hover:shadow-xl duration-300 hover:z-20">
-             <ProductCardImageslider />
-             <ProductCardPartTwo />
-           </Card>
-          
-        ))}
+        {productdData?.map(data=> <ProductCard data={data} />)}
       </Carousel>
 
       {/* Custom Previous Button */}

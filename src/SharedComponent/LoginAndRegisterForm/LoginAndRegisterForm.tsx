@@ -91,6 +91,17 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
              {condition==='Register'?"Register":"login"}  
             </button>
           </form>
+       {condition ==="Login"&&   <div className=" flex justify-between mt-5">
+            <div className=" flex items-center gap-2">
+              <input type="checkbox" />
+              <p className=" text-[14px] ">Remember me</p>
+            </div>
+
+            <div>
+              <Link className=" text-blue-500" href="#">Lost your password?</Link>
+            </div>
+
+          </div>}
         </div>
 
         {/* Divider */}
@@ -116,9 +127,7 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
           register
           </Link>}
 
-          <div className=" flex justify-between">
-
-          </div>
+         
         </div>
 
     

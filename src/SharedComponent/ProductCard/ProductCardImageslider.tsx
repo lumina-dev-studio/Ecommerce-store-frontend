@@ -5,17 +5,11 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { IoSearchOutline, IoShuffle } from "react-icons/io5";
 import { Card } from "@/components/ui/card";
 
-const ProductCardImageslider = () => {
-    const images = [
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png", 
-        "/bannar/joypad.png", 
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png"
-    ];
+const ProductCardImageslider = ({data}:any) => {
+  
   
     // State to track the current image
-    const [currentImage, setCurrentImage] = useState(images[0]);
+    const [currentImage, setCurrentImage] = useState(data?.images[0]);
 
     return (
         <div className="relative ">
@@ -49,7 +43,7 @@ const ProductCardImageslider = () => {
 
             {/* Button section to switch images on hover */}
             <section className="absolute bottom-0 left-0 right-0 flex justify-around gap-2 px-4 pb-2">
-                {images.map((image, index) => (
+                {data?.images?.map((image:any, index:any) => (
                     <button
                         key={index}
                         onMouseEnter={() => setCurrentImage(image)} // Change image on hover
@@ -60,7 +54,7 @@ const ProductCardImageslider = () => {
 
             {/* Optional: You can use the below to create buttons with a visual indication for the current image */}
             <section className="absolute bottom-0 left-0 right-0 flex justify-around gap-2 px-4 pb-2">
-                {images.map((image, index) => (
+                {data?.images?.map((image:any, index:any) => (
                     <button
                         key={index}
                         onMouseEnter={() => setCurrentImage(image)} // Change image on hover

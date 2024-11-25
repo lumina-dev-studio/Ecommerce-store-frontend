@@ -5,6 +5,9 @@ import { PiShoppingCartSimpleLight } from "react-icons/pi";
 
 import { RiMenuFill } from "react-icons/ri";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { useAppDispatch } from "@/Redux/hooks";
+
+import { setRightSidebarIsopen } from "@/Redux/api/RightSideBar/RightSideBarSlice";
 
 
 
@@ -13,6 +16,9 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 
 const NavbarPartTow = () => {
+
+   
+    const dispatch = useAppDispatch()
   return (
     <div className=" bg-blue-500/15 h-[70px]">
 
@@ -92,7 +98,7 @@ const NavbarPartTow = () => {
                 </div>
             </div>
 
-             <div className=" flex gap-1 items-center cursor-pointer">
+             <div  onClick={() => dispatch(setRightSidebarIsopen(true))} className=" flex gap-1 items-center cursor-pointer">
              <div  className=" flex items-center pt-4 relative p-1">
                              <div className="  rounded-full flex gap-2 p-1  items-center " >
                               <div className=" w-[40px] h-[40px] rounded-full flex justify-center p-2 bg-blue-500" >
