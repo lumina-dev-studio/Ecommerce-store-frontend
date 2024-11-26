@@ -47,9 +47,9 @@ const ProductCardPartTow = ({ data }: ProductCardProps) => {
     localStorage.setItem("product", JSON.stringify(updatedProducts));
     toast.success("Product added to cart successfully!");
 
-    const lastGetItem = localStorage.getItem("product");
-    const lastData = JSON.parse(lastGetItem);
-    dispatch(setAddToCartData(lastData))
+    // const lastGetItem = localStorage.getItem("product");
+    // const lastData = JSON.parse(lastGetItem);
+    // dispatch(setAddToCartData(lastData))
   };
 
   return (
