@@ -8,6 +8,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { useAppDispatch } from "@/Redux/hooks";
 
 import { setRightSidebarIsopen } from "@/Redux/api/RightSideBar/RightSideBarSlice";
+import Link from "next/link";
 
 
 
@@ -67,9 +68,9 @@ const NavbarPartTow = () => {
 
             <div  className=" flex items-center pt-3 cursor-pointer">
                 <div className="  rounded-full flex gap-2 p-1  items-center " >
-                 <div className=" w-[40px] h-[40px] rounded-full flex justify-center items-center  bg-white" >
+                 <Link href='myAccount/login' className=" w-[40px] h-[40px] rounded-full flex justify-center items-center  bg-white" >
                  <LiaUser className="  text-[25px] " />
-                 </div>
+                 </Link>
              
                 </div>
             </div>

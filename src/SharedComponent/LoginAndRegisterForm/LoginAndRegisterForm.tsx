@@ -8,9 +8,9 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
 
   return (
     <div className="flex justify-center my-20 bg-gray-100">
-      <div className="flex gap-5 w-3/4 overflow-hidden">
+      <div className="md:flex gap-5 md:w-3/4 overflow-hidden">
         {/* Left Section */}
-        <div className="w-1/2 p-8">
+        <div className="md:w-1/2 p-8">
           <h2 className="text-[22px] font-bold mb-4 uppercase">{condition==='Register'?"Register":"Login" }</h2>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
             {/* Username Field */}
@@ -106,11 +106,11 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
 
         {/* Divider */}
         <div>
-          <hr className="w-[1px] bg-gray-300 h-[400px]" />
+          <hr className="w-[1px] bg-gray-300 h-[400px] hidden md:block" />
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 bg-gray-100 p-8 text-center">
+        <div className="md:w-1/2 bg-gray-100 p-8 text-center">
           <h2 className="text-[22px] font-bold mb-4 uppercase">{condition==='Register'?"Register":"Login" }</h2>
           <p className="text-center text-gray-500 mb-4">
             Registering for this site allows you to access your order status and

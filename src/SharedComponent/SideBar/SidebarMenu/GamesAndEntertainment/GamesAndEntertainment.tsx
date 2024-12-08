@@ -7,7 +7,7 @@ const GamesAndEntertainment = ({setCondition}:any) => {
     setTimeout(() => {
       window.location.reload();
       
-    }, 500);
+    }, 200);
   }
   return (
     <div>
