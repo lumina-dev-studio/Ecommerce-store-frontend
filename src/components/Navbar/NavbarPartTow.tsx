@@ -68,7 +68,7 @@ const NavbarPartTow = () => {
 
             <div  className=" flex items-center pt-3 cursor-pointer">
                 <div className="  rounded-full flex gap-2 p-1  items-center " >
-                 <Link href='myAccount/login' className=" w-[40px] h-[40px] rounded-full flex justify-center items-center  bg-white" >
+                 <Link href='/myAccount/login' className=" w-[40px] h-[40px] rounded-full flex justify-center items-center  bg-white" >
                  <LiaUser className="  text-[25px] " />
                  </Link>
              
