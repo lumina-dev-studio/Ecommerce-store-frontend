@@ -43,7 +43,7 @@ const PopularCategoriesWithSlider = ({ data }: any) => {
                         <CardContent className="flex flex-col items-center justify-center p-4">
                           <img
                             src={data[index + i].img}
-                            className="w-[180px] h-[150px] transition-transform duration-500 group-hover:scale-110"
+                            className="w-[180px] h-[150px] object-contain transition-transform duration-500 group-hover:scale-110"
                             alt={data[index + i].title}
                           />
                           <section className="text-center mt-2 space-y-1">
@@ -76,7 +76,7 @@ const PopularCategoriesWithSlider = ({ data }: any) => {
             <section className="bg-white rounded-xl p-2">
               <img
                 src={category.img}
-                className="w-[180px] h-[150px] transform transition-transform duration-500 group-hover:scale-110"
+                className="w-[180px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                 alt={category.title}
               />
             </section>

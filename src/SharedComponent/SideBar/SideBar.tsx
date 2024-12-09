@@ -7,7 +7,7 @@ const SideBar = ({smallDeviceSidebarCondition}: any) => {
      
     const [condition,setCondition]=useState({isopen:false,condition:''})
 
-    console.log(smallDeviceSidebarCondition,'hello')
+  
     
   return (
 

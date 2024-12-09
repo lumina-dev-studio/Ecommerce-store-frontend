@@ -18,7 +18,7 @@ const addToCartSlice = createSlice({
     setAddToCartData: (state, action: PayloadAction<any[]>) => {
       state.addToCartData = action.payload; // Assign the new cart data
 
-      console.log(action.payload,'hello')
+      
     },
     // Action to clear the cart
     clearCart: (state) => {

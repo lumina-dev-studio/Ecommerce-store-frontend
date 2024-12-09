@@ -58,7 +58,7 @@ const ShoppingEventPartTow = ({data}:any) => {
             <section>
               <img
                 src="/bannar/headPhone.png"
-                className="w-[100px] h-[100px] transform transition-transform duration-500 hover:scale-110"
+                className="w-[100px] h-[100px] object-contain transform transition-transform duration-500 hover:scale-110"
                 alt="Headphone"
               />
             </section>

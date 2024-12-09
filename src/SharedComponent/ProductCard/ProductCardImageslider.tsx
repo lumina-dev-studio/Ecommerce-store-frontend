@@ -15,11 +15,16 @@ const ProductCardImageslider = ({data}:any) => {
         <div className="relative ">
             {/* Display the current image */}
             <section className="flex justify-center items-center h-[270px]">
-                <img 
+                {/* <img 
                     src={currentImage} 
                     alt="Product" 
                     className="w-[200px] h-[200px] transition-all duration-300" 
-                />
+                /> */}
+ <img 
+    src={currentImage} 
+    alt="Product" 
+    className="w-[200px] h-[200px]  object-cover transition-all duration-300" 
+/>
             </section>
 
             <section className=" space-y-3 absolute top-[5%] left-[5%]">

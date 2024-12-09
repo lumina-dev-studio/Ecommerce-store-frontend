@@ -13,7 +13,7 @@ const LayoutProvider = ({children}:any) => {
 
     const [smallDeviceSidebarCondition,setSmallDeviceSidebarCondition]=useState(false)
 
-    console.log(smallDeviceSidebarCondition,'ssss')
+    
 
   return (
     <div> 

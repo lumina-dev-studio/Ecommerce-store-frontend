@@ -57,7 +57,7 @@ const BrandAdvertisement = ({data}:any) => {
                
     
                 <section className="space-y-1.5">
-                <img className=" w-[70px] h-[40px]" src={item?.img} alt="" />
+                <img className=" w-[70px] h-[40px] object-contain" src={item?.img} alt="" />
                 </section>
               </div>
             ))}

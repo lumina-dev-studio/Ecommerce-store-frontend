@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import { useState } from "react";
 
 const CartPartTwo = () => {
@@ -89,9 +90,9 @@ const CartPartTwo = () => {
       </div>
 
       {/* Proceed to Checkout Button */}
-      <button className="mt-6 w-full px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+      <Link href='/payment/checkOut' className="block text-center mt-6 w-full px-4 py-2  bg-blue-500 text-white rounded hover:bg-blue-600">
         Proceed To Checkout
-      </button>
+      </Link>
     </div>
   );
 };

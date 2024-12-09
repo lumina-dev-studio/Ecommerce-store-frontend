@@ -25,7 +25,7 @@ const PCsSelectedForYouPartTow = () => {
      <section className=" absolute top-[30%] right-[2%] ">
              <img
                src="/bannar/headPhone.png"
-               className="w-[350px] h-[350px] transform transition-transform z-10 duration-500 hover:scale-110"
+               className="w-[350px] h-[350px] object-contain transform transition-transform z-10 duration-500 hover:scale-110"
                alt="phone"
              />
            </section>

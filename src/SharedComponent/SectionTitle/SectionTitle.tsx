@@ -1,7 +1,7 @@
 import { GoChevronRight } from "react-icons/go";
 const SectionTitle = ({title,condition}:any) => {
 
-  console.log(condition,'kkkk')
+  
   return (
     <div className=" md:flex justify-between items-center mb-5">
       <h1 className=" text-[25px] font-bold mt-10 ">{title}</h1>

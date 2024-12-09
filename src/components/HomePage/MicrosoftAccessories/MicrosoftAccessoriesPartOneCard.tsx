@@ -19,7 +19,7 @@ const MicrosoftAccessoriesPartOneCard = () => {
               <section className="absolute top-[12%] right-[2%]">
                 <img
                   src="/bannar/joypad.png"
-                  className="w-[180px] h-[150px] transform transition-transform duration-500 group-hover:scale-110"
+                  className="w-[180px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
               </section>
@@ -44,7 +44,7 @@ const MicrosoftAccessoriesPartOneCard = () => {
               <section className="absolute top-[12%] right-[0%]">
                 <img
                   src="/bannar/camera.png"
-                  className="w-[200px] h-[150px] transform transition-transform duration-500 group-hover:scale-110"
+                  className="w-[200px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
               </section>
@@ -69,7 +69,7 @@ const MicrosoftAccessoriesPartOneCard = () => {
               <section className="absolute top-[12%] right-[0%]">
                 <img
                   src="/bannar/camera.png"
-                  className="w-[200px] h-[150px] transform transition-transform duration-500 group-hover:scale-110"
+                  className="w-[200px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
               </section>
