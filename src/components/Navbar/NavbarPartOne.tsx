@@ -11,6 +11,7 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
 
    
     <div className=" xl:w-[90%] 4xl:w-[70%]  mx-auto h-20  xl:grid xl:grid-cols-12 3xl:pe-[50px]  ">
+  
        
     <div className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
        <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
