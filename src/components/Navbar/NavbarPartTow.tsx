@@ -23,9 +23,10 @@ const NavbarPartTow = () => {
   return (
     <div className=" bg-blue-500/15 h-[70px]">
 
-        <div className=" xl:w-[90%] 3xl:w-[60%] mx-auto flex 2xl:gap-52 gap-50  justify-between 3xl:pe-[50px]">
+        <div className=" xl:w-[90%] 4xl:w-[70%] mx-auto flex  2xl:gap-52 3xl:gap-0 gap-50  justify-between xl:ps-[15px]
+        3xl:ps-0 3xl:pe-[50px]">
 
-        <section className=" flex  items-center gap-3">
+        <div className=" flex  items-center xl:gap-1 3xl:gap-3">
             <div  className=" flex items-center pt-3">
                 <div className="  rounded-full bg-white flex gap-2 p-1  items-center cursor-pointer" >
                  <div className=" w-[40px] h-[40px] rounded-full flex justify-center p-2 bg-blue-500" >
@@ -51,10 +52,10 @@ const NavbarPartTow = () => {
             <p className=" font-[500] pe-2 text-[15px]  ">
             Outlet</p>
             </div>
-        </section>
+        </div>
 
 
-        <section className=" flex  items-center gap-3 ">
+        <div className=" flex  items-center gap-3 ">
           
 
         <div className=" mt-3  hover:bg-blue-500/30 hover:text-blue-700 rounded-full px-2 py-2 flex items-center cursor-pointer">
@@ -115,7 +116,7 @@ const NavbarPartTow = () => {
                          <p className=" font-[500] text-[15px] mt-3  ">$0.00</p>       
              </div>
             
-        </section>
+        </div>
 
 
 

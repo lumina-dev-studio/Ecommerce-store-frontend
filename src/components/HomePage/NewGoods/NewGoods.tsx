@@ -52,19 +52,19 @@ const NewGoods = () => {
       
   return (
     <div className=" my-20 lg:flex gap-5">
-        <section className=" hidden lg:inline-flex">
+        <div className=" hidden lg:inline-flex">
         <NewGoodsAdvertise/>
-        </section>
+        </div>
       
         
-        <section>
+        <div>
        <SectionTitle title="New Goods" condition={true} />
 
-       <div className=" grid xl:grid-cols-3 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4  justify-center gap-5 ">
+       <div className=" w-full grid xl:grid-cols-3 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4  md:justify-center gap-5 ">
        {productdData?.map(data=> <ProductCard data={data} />)}
     
     </div>
-       </section>
+       </div>
     </div>
   );
 };

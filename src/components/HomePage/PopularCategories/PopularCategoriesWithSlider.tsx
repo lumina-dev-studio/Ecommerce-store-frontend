@@ -46,10 +46,10 @@ const PopularCategoriesWithSlider = ({ data }: any) => {
                             className="w-[180px] h-[150px] object-contain transition-transform duration-500 group-hover:scale-110"
                             alt={data[index + i].title}
                           />
-                          <section className="text-center mt-2 space-y-1">
+                          <div className="text-center mt-2 space-y-1">
                             <h3 className="font-bold">{data[index + i].title}</h3>
                             <p className="text-gray-500">{data[index + i].products} products</p>
-                          </section>
+                          </div>
                         </CardContent>
                       </Card>
                     </div>
@@ -73,17 +73,17 @@ const PopularCategoriesWithSlider = ({ data }: any) => {
       <div className="hidden xl:flex mt-4 gap-4">
         {data.map((category: any, index: any) => (
           <div key={index} className="group p-4 w-[180px] sm:w-[200px] md:w-[250px] lg:w-[300px] transition-shadow duration-300">
-            <section className="bg-white rounded-xl p-2">
+            <div className="bg-white rounded-xl p-2">
               <img
                 src={category.img}
                 className="w-[180px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                 alt={category.title}
               />
-            </section>
-            <section className="text-center mt-2 space-y-1">
+            </div>
+            <div className="text-center mt-2 space-y-1">
               <h3 className="font-bold">{category.title}</h3>
               <p className="text-gray-500">{category.products} products</p>
-            </section>
+            </div>
           </div>
         ))}
       </div>

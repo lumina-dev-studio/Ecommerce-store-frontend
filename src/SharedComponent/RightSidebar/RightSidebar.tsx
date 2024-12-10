@@ -69,7 +69,7 @@ const RightSidebar = () => {
 
   return (
     <div className="h-full">
-      <section
+      <div
         className={`top-0 right-0 ${
           rightSideBarIsOpen ? "block" : "hidden"
         } fixed w-[100%] md:w-[350px]  bg-white h-full z-50 shadow-lg duration-300`}
@@ -157,7 +157,7 @@ const RightSidebar = () => {
               </Link>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

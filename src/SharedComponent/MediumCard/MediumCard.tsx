@@ -5,11 +5,11 @@ const MediumCard = ({data}:any) => {
     <div>
       <Card
          
-          className="bg-white shadow-none grid grid-cols-1  xl:grid-cols-2 border-none items-center p-2 rounded-lg transition"
+          className="bg-white shadow-none grid grid-cols-1   xl:grid-cols-2 border-none items-center p-2 rounded-lg transition"
         >
           
       
-            <div className="  ">
+            <div className=" flex  justify-center  ">
               <img
                 src={data?.image}
                 alt={data?.title}

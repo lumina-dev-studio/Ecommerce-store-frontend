@@ -1,7 +1,7 @@
 const NewGoodsAdvertise = () => {
   return (
     <div className=" pt-10">
-   <section className=" w-[300px] rounded-xl bg-gradient-to-r from-[#050601] to-[#10484D]  h-[575px]  relative ">
+   <div className=" w-[300px] rounded-xl bg-gradient-to-r from-[#050601] to-[#10484D]  h-[575px]  relative ">
 
     
    <div className="absolute top-0 left-0 w-full h-full bg-black/10 z-0 rounded-xl"></div>
@@ -22,18 +22,18 @@ const NewGoodsAdvertise = () => {
 
 
         
-        <section className=" absolute top-[30%] right-[2%] ">
+        <div className=" absolute top-[30%] right-[2%] ">
                 <img
                   src="/bannar/headPhone.png"
                   className="w-[350px] h-[350px] object-contain transform transition-transform z-10 duration-500 hover:scale-110"
                   alt="phone"
                 />
-              </section>
+              </div>
 
 
    
     
-    </section>
+    </div>
 
 
    

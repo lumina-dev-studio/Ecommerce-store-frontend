@@ -49,16 +49,16 @@ const GamesAndEntertainmentBannerSection = () => {
            <div className=' flex gap-2 md:gap-5 mt-3'>
 
        
-            <section className="mt-2">
+            <div className="mt-2">
               <button className="py-2.5 px-6 text-[15px] text-black bg-white rounded-lg hover:bg-blue-600 transition duration-300">
                 Shop White
               </button>
-            </section>
-            <section className="mt-2">
+            </div>
+            <div className="mt-2">
               <button className="py-2.5 px-6 text-[15px] text-white bg-blue-500 rounded-lg hover:bg-blue-600 transition duration-300">
                 Shop Black
               </button>
-            </section>
+            </div>
             </div>
           </div> 
   

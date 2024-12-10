@@ -23,7 +23,7 @@ const CartPartOne = () => {
 
       {/* Cart Table */}
       <div className="bg-white p-6 rounded-lg shadow">
-       <section className=" hidden lg:block">
+       <div className=" hidden lg:block">
        <table className="w-full text-left border-collapse ">
           <thead>
             <tr>
@@ -68,10 +68,10 @@ const CartPartOne = () => {
             </tr>
           </tbody>
         </table>
-       </section>
+       </div>
 
   {/* for small device start */}
-        <section className=" flex lg:hidden w-full items-center gap-2 ">
+        <div className=" flex lg:hidden w-full items-center gap-2 ">
 
           <div className=" h-full">
           <img
@@ -121,7 +121,7 @@ const CartPartOne = () => {
           </div>
 
           
-        </section>
+        </div>
         {/* for small device end */}
 
         {/* Coupon Input */}

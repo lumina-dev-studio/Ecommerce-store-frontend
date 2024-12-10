@@ -10,9 +10,9 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
     <div className='bg-white '>
 
    
-    <div className=" xl:w-[90%] 3xl:w-[60%]  mx-auto h-20  xl:grid xl:grid-cols-12 3xl:pe-[50px]  ">
+    <div className=" xl:w-[90%] 4xl:w-[70%]  mx-auto h-20  xl:grid xl:grid-cols-12 3xl:pe-[50px]  ">
        
-    <section className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
+    <div className= "xl:col-span-2 w-[90%] mx-auto xl:w-full my-3 xl:my-0"  >
        <div className="xl:flex  grid grid-cols-12  justify-between items-center h-full">
 
        <div onClick={()=>setSmallDeviceSidebarCondition(true)} className='col-span-2 xl:hidden' >
@@ -28,14 +28,14 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
      
        </div>
        
-    </section>
-    <section className="xl:col-span-6 xl:w-full px-5 xl:px-0  grid  items-center h-full xl:ms-10 bg-blue-500/15 xl:bg-blue-500/0 " >
+    </div>
+    <div className="xl:col-span-6 xl:w-full px-5 xl:px-0  grid  items-center h-full xl:ms-10 bg-blue-500/15 xl:bg-blue-500/0 " >
     <SearchNavBar/>
-    </section>
-    <section className= {`col-span-2 hidden xl:inline`}>
+    </div>
+    <div className= {`col-span-2 hidden xl:inline`}>
       
 
-      <div className=' flex gap-2 items-center mt-5 ms-10 justify-end'>
+      <div className=' flex gap-2 items-center mt-5 ms-10  justify-end'>
            
            <div>
            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,16 +50,16 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
               </defs>
               </svg>
             </div>
-            <div>
-                <p className=' font-bold text-[13px]'>24 Support</p>
+            <div >
+                <p className=' font-bold text-[13px] '>24 Support</p>
                 <p className=' text-blue-500 text-[14px]'>+1 212-334-0212</p>
             </div>
         </div>
     
       
-    </section>
+    </div>
     
-    <section className= {`col-span-2 hidden xl:inline`}>
+    <div className= {`col-span-2 hidden xl:inline`}>
       
 
       <div className=' flex gap-2 items-center mt-5 ms-5 justify-end'>
@@ -89,7 +89,7 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}:any) => {
         </div>
     
       
-    </section>
+    </div>
     
         </div>
         </div>

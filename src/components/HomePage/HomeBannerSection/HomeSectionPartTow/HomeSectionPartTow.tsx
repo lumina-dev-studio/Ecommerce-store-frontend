@@ -2,10 +2,10 @@ const HomeSectionPartTow = () => {
     return (
       <div className="h-[450px] space-y-5">
 
-<section className="  bg-gradient-to-r from-[#F2D9DD] to-[#E4C8CA]  md:h-[250px] h-[300px]  rounded-lg group ">
+<div className="  bg-gradient-to-r from-[#F2D9DD] to-[#E4C8CA]  md:h-[250px] h-[300px]  rounded-lg group ">
 
                <div className="py-5 px-8  relative">
-              <section className=" mt-5 absolute z-10">
+              <div className=" mt-5 absolute z-10">
                <div className=" ">
                <h1 className="text-white font-semibold text-[25px]">Aurora Headset</h1>
                 
@@ -34,25 +34,25 @@ const HomeSectionPartTow = () => {
               Buy Now
             </button>
           </div>
-              </section>
+              </div>
   
               {/* Image that scales on hover */}
-              <section className="absolute top-[8%] right-[2%] ">
+              <div className="absolute top-[8%] right-[2%] ">
                 <img
                   src="/bannar/headPhone.png"
                   className="w-[350px] h-[250px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
-              </section>
+              </div>
             </div>
 
-             </section>
+             </div>
         
-        <section className="grid md:grid-cols-2 gap-5">
+        <div className="grid md:grid-cols-2 gap-5">
           <div className=" bg-gradient-to-r from-[#1689DB] to-[#4BB5F6] w-full p-5 rounded-lg relative h-[180px] group">
             {/* Content */}
             <div>
-              <section className="mt-5 absolute z-10">
+              <div className="mt-5 absolute z-10">
                 <h1 className="text-white font-semibold text-[18px]">New Dual Sense</h1>
                 <p className="mt-3 text-gray-100">For PlayStation 5</p>
                 <div className="mt-3">
@@ -60,23 +60,23 @@ const HomeSectionPartTow = () => {
                     View Details
                   </button>
                 </div>
-              </section>
+              </div>
   
               {/* Image that scales on hover */}
-              <section className="absolute top-[12%] right-[2%]">
+              <div className="absolute top-[12%] right-[2%]">
                 <img
                   src="/bannar/joypad.png"
                   className="w-[180px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
-              </section>
+              </div>
             </div>
           </div>
   
           <div className="bg-gradient-to-r from-[#EEB53B] to-[#E1C531] w-full p-5 rounded-lg relative h-[180px] group">
             {/* Content */}
             <div>
-              <section className="mt-5 absolute z-10">
+              <div className="mt-5 absolute z-10">
                 <h1 className="text-white font-semibold text-[18px]">
                 Instant Cameras</h1>
                 <p className="mt-3 text-gray-100">Get photo paper as a gift</p>
@@ -85,19 +85,19 @@ const HomeSectionPartTow = () => {
                     View Details
                   </button>
                 </div>
-              </section>
+              </div>
   
               {/* Image that scales on hover */}
-              <section className="absolute top-[12%] right-[0%]">
+              <div className="absolute top-[12%] right-[0%]">
                 <img
                   src="/bannar/camera.png"
                   className="w-[200px] h-[150px] object-contain transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
-              </section>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     );
   };

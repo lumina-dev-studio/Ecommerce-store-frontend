@@ -10,14 +10,24 @@ const config: Config = {
     
   ],
   theme: {
-  	screens: {
-  		sm: '640px',
-  		md: '768px',
-  		lg: '1024px',
-  		xl: '1280px',
-  		'2xl': '1536px',
-  		'3xl': '1600px'
-  	},
+  	// screens: {
+  	// 	sm: '640px',
+  	// 	md: '768px',
+  	// 	lg: '1024px',
+  	// 	xl: '1280px',
+  	// 	'2xl': '1536px',
+  	// 	'3xl': '1600px'
+  	// },
+	  screens: {
+        xs: '360px',  // Extra small devices (e.g., small phones)
+        sm: '480px',  // Small devices (e.g., phones)
+        md: '768px',  // Medium devices (e.g., tablets)
+        lg: '1024px', // Large devices (e.g., laptops)
+        xl: '1280px', // Extra large devices (e.g., desktops)
+        '2xl': '1536px', // Ultra-wide screens
+        '3xl': '1600px', // Ultra-wide screens
+        '4xl': '1920px', // 4K screens
+      },
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',

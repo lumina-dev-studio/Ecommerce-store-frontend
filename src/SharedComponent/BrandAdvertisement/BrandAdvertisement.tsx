@@ -53,12 +53,12 @@ const BrandAdvertisement = ({data}:any) => {
           >
             {/* Loop through the data to create carousel items */}
             {data?.map((item:any, index:any) => (
-              <div key={index} className="m-2 rounded-xl flex justify-start  gap-2 items-center">
+              <div key={index} className="m-2 rounded-xl flex justify-center lg:justify-start  gap-2 items-center">
                
     
-                <section className="space-y-1.5">
+                <div className="space-y-1.5">
                 <img className=" w-[70px] h-[40px] object-contain" src={item?.img} alt="" />
-                </section>
+                </div>
               </div>
             ))}
           </Carousel>

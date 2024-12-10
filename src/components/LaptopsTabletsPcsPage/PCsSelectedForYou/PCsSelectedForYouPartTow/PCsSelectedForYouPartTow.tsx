@@ -1,7 +1,7 @@
 const PCsSelectedForYouPartTow = () => {
   return (
     <div>
-       <section className=" w-[300px] rounded-xl bg-[#544499] h-[575px]  relative ">
+       <div className=" w-[300px] rounded-xl bg-[#544499] h-[575px]  relative ">
 
     
 <div className="absolute top-0 left-0 w-full h-full bg-black/70 z-0 rounded-xl"></div>
@@ -22,18 +22,18 @@ const PCsSelectedForYouPartTow = () => {
 
 
      
-     <section className=" absolute top-[30%] right-[2%] ">
+     <div className=" absolute top-[30%] right-[2%] ">
              <img
                src="/bannar/headPhone.png"
                className="w-[350px] h-[350px] object-contain transform transition-transform z-10 duration-500 hover:scale-110"
                alt="phone"
              />
-           </section>
+           </div>
 
 
 
  
- </section>
+ </div>
     </div>
   );
 };

@@ -54,25 +54,25 @@ const ProductCardPartTow = ({ data }: ProductCardProps) => {
 
   return (
     <div className=" group"> {/* Apply 'relative' to contain 'absolute' positioned elements */}
-      {/* section 1 ------------------------------------------------------------------- */}
-      <section>
+      {/* div 1 ------------------------------------------------------------------- */}
+      <div>
         <h3 className="font-bold text-[14px]">Apple MacBook Pro 16″ M1 Pro</h3>
         <p className="font-[500] text-gray-400 text-[14px] mt-2">Apple MacBook</p>
 
-        <section className="flex mt-2">
+        <div className="flex mt-2">
           <CiStar className="text-[17px]" />
           <CiStar className="text-[17px]" />
           <CiStar className="text-[17px]" />
           <CiStar className="text-[17px]" />
           <CiStar className="text-[17px]" />
-        </section>
+        </div>
 
-        <section className="flex gap-1 items-center mt-2">
+        <div className="flex gap-1 items-center mt-2">
           <p>
             <FaCheck className="text-blue-500" />
           </p>
           <p className="font-[500] text-[14px]">In Stock</p>
-        </section>
+        </div>
 
         <p className="text-blue-500 text-[14px] font-[600] mt-2">${data?.price}</p>
 
@@ -86,11 +86,11 @@ const ProductCardPartTow = ({ data }: ProductCardProps) => {
             SKU: <span className="text-gray-400">304344</span>
           </p>
         </div>
-      </section>
+      </div>
 
-      {/* section 2 ------------------------------------------------------------------- */}
-      {/* Position this section absolutely so it appears above section 1 on hover */}
-      <section className="absolute  rounded-xl left-0  mt-2 w-full bg-white p-4 border-t-0 overflow-y-auto hidden group-hover:block h-[300px] z-10 border border-gray-200 shadow-lg group-hover:rounded-t-none">
+      {/* div 2 ------------------------------------------------------------------- */}
+      {/* Position this div absolutely so it appears above div 1 on hover */}
+      <div className="absolute  rounded-xl left-0  mt-2 w-full bg-white p-4 border-t-0 overflow-y-auto hidden group-hover:block h-[300px] z-10 border border-gray-200 shadow-lg group-hover:rounded-t-none">
         <hr />
         <h2 className="mt-2">Apple MacBook Pro</h2>
 
@@ -155,7 +155,7 @@ const ProductCardPartTow = ({ data }: ProductCardProps) => {
           <h3>Warranty:</h3>
           <p>12 months</p>
         </div>
-      </section>
+      </div>
     </div>
   );
 };

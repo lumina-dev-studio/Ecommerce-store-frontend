@@ -5,12 +5,12 @@ const HomeBannerSection = () => {
   return (
     <div className="grid lg:grid-cols-2 gap-5  mt-20 md:mt-20 xl:mt-5  mb-20">
 
-        <section className=" w-full">
+        <div className=" w-full">
         <HomeBannerSectionSlider/>
-        </section>
-        <section>
+        </div>
+        <div>
         <HomeSectionPartTow/>
-        </section>
+        </div>
       
     </div>
   );

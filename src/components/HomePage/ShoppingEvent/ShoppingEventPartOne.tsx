@@ -5,16 +5,16 @@ const ShoppingEventPartOne = () => {
   return (
     <div className=" grid md:grid-cols-2 md:gap-10 items-center xl:items-start   ">
     
-    <section className=" flex   ">
+    <div className=" flex   ">
                 <img
                   src="/shoppngEvent/appleProduct.png"
                   className="w-full h-[200px]  md:mt-[50px] xl:mt-0 lg:h-[250px] xl:h-[400px] transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
-              </section>
+              </div>
 
 
-    <section className=" md:mt-10 ">
+    <div className=" md:mt-10 ">
                <div className=" ">
                <h1 className=" font-semibold text-[25px] md:text-[27px] lg:text-[30px] xl:text-[40px] 2xl:text-[50px]">Apple Shopping Event</h1>
                <p className=" font-[500] text-[18px] xl:text-[20] 2xl:text-[25px] mt-3">Hurry and get discounts on all Apple devices up to 20%</p>
@@ -44,7 +44,7 @@ const ShoppingEventPartOne = () => {
             Go Shopping  <GoChevronRight className=" text-[20px]" />
             </button>
           </div>
-              </section>
+              </div>
       
     </div>
   );

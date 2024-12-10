@@ -8,7 +8,7 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
 
   return (
     <div className="flex justify-center my-20 bg-gray-100">
-      <div className="md:flex gap-5 md:w-3/4 overflow-hidden">
+      <div className="md:flex gap-5 lg:w-3/4 overflow-hidden">
         {/* Left Section */}
         <div className="md:w-1/2 p-8">
           <h2 className="text-[22px] font-bold mb-4 uppercase">{condition==='Register'?"Register":"Login" }</h2>

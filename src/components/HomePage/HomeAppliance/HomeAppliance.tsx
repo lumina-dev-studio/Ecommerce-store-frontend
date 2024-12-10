@@ -62,7 +62,7 @@ const HomeAppliance = () => {
        <SectionTitle title="Home Appliance" condition={true} />
 
       
-       <div className=" grid xl:grid-cols-5 md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 ">
+       <div className=" w-full grid xl:grid-cols-4 2xl:grid-cols-5 md:grid-cols-2 lg:grid-cols-3 md:justify-center gap-5 ">
         {productdData?.map(data=> <ProductCard data={data} />)}
         
        </div>

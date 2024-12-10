@@ -9,15 +9,15 @@ const MicrosoftAccessoriesPartOneBanner = () => {
     <Card className=" md:flex px-5 xl:h-[350px] items-center gap-5 pb-5">
 
         
-    <section className=" flex   ">
+    <div className=" flex   ">
                 <img
                   src="/shoppngEvent/appleProduct.png"
                   className="w-full h-[200px]  md:mt-[50px] xl:mt-0 lg:h-[250px]  transform transition-transform duration-500 group-hover:scale-110"
                   alt="Joypad"
                 />
-              </section>
+              </div>
 
-              <section >
+              <div >
                 <h1 className=" text-[20px] md:text-[27px] xl:text-[45px] font-[600]">Microsoft <br  className=" hidden xl:block"/> Accessories</h1>
                 <p className=" text-gray-500 mt-3">Personalize your Surface Pro with Microsoft branded <br className=" hidden lg:block" /> accessories. In the presence of many colors for every taste.</p>
 
@@ -40,7 +40,7 @@ const MicrosoftAccessoriesPartOneBanner = () => {
 
                 </div>
 
-              </section>
+              </div>
       
     </Card>
   );

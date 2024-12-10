@@ -55,15 +55,15 @@ const ShoppingEventPartTow = ({data}:any) => {
         {/* Loop through the data to create carousel items */}
         {data?.map((item:any, index:any) => (
           <div key={index} className="m-2 bg-white rounded-xl flex gap-2 items-center">
-            <section>
+            <div>
               <img
                 src="/bannar/headPhone.png"
                 className="w-[100px] h-[100px] object-contain transform transition-transform duration-500 hover:scale-110"
                 alt="Headphone"
               />
-            </section>
+            </div>
 
-            <section className="space-y-1.5">
+            <div className="space-y-1.5">
               <h3>iPad Mini</h3>
               <div className="flex">
                 <CiStar className="text-[17px]" />
@@ -73,7 +73,7 @@ const ShoppingEventPartTow = ({data}:any) => {
                 <CiStar className="text-[17px]" />
               </div>
               <p className="text-blue-500 text-[14px] font-[600]">$600.00</p>
-            </section>
+            </div>
           </div>
         ))}
       </Carousel>

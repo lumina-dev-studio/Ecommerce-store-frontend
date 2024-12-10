@@ -8,13 +8,13 @@ const Navbar = ({setSmallDeviceSidebarCondition}:any) => {
 
     <div>
 
-   <section >
+   <div >
     <NavbarPartOne setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
-    </section>
+    </div>
    
-   <section className=" hidden  xl:inline">
+   <div className=" hidden  xl:inline">
     <NavbarPartTow/>
-   </section>
+   </div>
  
     </div>
   );

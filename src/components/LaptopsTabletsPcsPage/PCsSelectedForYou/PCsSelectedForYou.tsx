@@ -45,19 +45,19 @@ const PCsSelectedForYou = () => {
     <div className=" my-20">
       <SectionTitle title="PCs Selected for You" condition={true} />
 
-      <div className="  flex gap-5 justify-center   3xl:gap-10">
-        <section className=" hidden xl:block">
+      <div className="  flex gap-5 justify-center   3xl:gap-5">
+        <div className=" hidden xl:block w-[400px]">
         <PCsSelectedForYouPartOne/>
-        </section>
+        </div>
         
-        <section className=" hidden xl:block">
+        <div className=" hidden xl:block">
         <PCsSelectedForYouPartTow/>
-        </section>
+        </div>
         
 
-        <section className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 xl:gap-10 2xl:gap-5 md:gap-20 3xl:gap-10 space-y-5 md:space-y-0">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3  lg:gap-10 xl:gap-4 2xl:gap-5  md:gap-5 3xl:gap-5 space-y-5 md:space-y-0">
         {productdData?.map(data=> <ProductCard data={data} />)}
-        </section>
+        </div>
       </div>
     </div>
   );

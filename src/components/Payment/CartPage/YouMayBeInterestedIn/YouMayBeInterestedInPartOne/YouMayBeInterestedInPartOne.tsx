@@ -74,7 +74,7 @@ const YouMayBeInterestedInPartOne = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 768 },
-      items: 3, // Show 2 items for medium screens
+      items: 2, // Show 2 items for medium screens
     },
     mobile: {
       breakpoint: { max: 767, min: 0 },
