@@ -4,6 +4,7 @@ import { useState } from "react";
 import { IoIosHeartEmpty } from "react-icons/io";
 import { IoSearchOutline, IoShuffle } from "react-icons/io5";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 
 const ProductCardImageslider = ({data}:any) => {
   
@@ -49,22 +50,22 @@ const ProductCardImageslider = ({data}:any) => {
             {/* Button section to switch images on hover */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-around gap-2 px-4 pb-2">
                 {data?.images?.map((image:any, index:any) => (
-                    <button
+                     <Link href='/productCategory/singleProduct/123'
                         key={index}
                         onMouseEnter={() => setCurrentImage(image)} // Change image on hover
-                        className="w-full h-[250px] opacity-0 rounded-xl bg-gray-200 hover:bg-gray-500 transition-opacity duration-300"
-                    ></button>
+                        className="w-full cursor-pointer h-[250px] opacity-0 rounded-xl bg-gray-200 hover:bg-gray-500 transition-opacity duration-300"
+                        ></Link>
                 ))}
             </div>
 
             {/* Optional: You can use the below to create buttons with a visual indication for the current image */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-around gap-2 px-4 pb-2">
                 {data?.images?.map((image:any, index:any) => (
-                    <button
+                    <Link href='/productCategory/singleProduct/123'
                         key={index}
                         onMouseEnter={() => setCurrentImage(image)} // Change image on hover
-                        className={`w-full h-1 rounded-xl bg-gray-200 opacity-0 group-hover:opacity-100 hover:bg-gray-500 transition-opacity duration-300`}
-                    ></button>
+                        className={`w-full cursor-pointer h-1 rounded-xl bg-gray-200 opacity-0 group-hover:opacity-100 hover:bg-gray-500 transition-opacity duration-300`}
+                    ></Link>
                 ))}
             </div>
         </div>
