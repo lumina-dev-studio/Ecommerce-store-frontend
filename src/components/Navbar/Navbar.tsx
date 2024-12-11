@@ -6,7 +6,7 @@ const Navbar = ({setSmallDeviceSidebarCondition}:any) => {
 
   return (
 
-    <div className="">
+    <div className="my-5">
 
    <div >
     <NavbarPartOne setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
