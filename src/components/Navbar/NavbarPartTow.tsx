@@ -9,6 +9,7 @@ import { useAppDispatch } from "@/Redux/hooks";
 
 import { setRightSidebarIsopen } from "@/Redux/api/RightSideBar/RightSideBarSlice";
 import Link from "next/link";
+import Container from "@/SharedComponent/Container/Container";
 
 
 
@@ -21,10 +22,10 @@ const NavbarPartTow = () => {
    
     const dispatch = useAppDispatch()
   return (
+   
     <div className=" bg-blue-500/15 h-[70px]">
-
-        <div className=" xl:w-[90%] 4xl:w-[70%] mx-auto flex  2xl:gap-52 3xl:gap-0 gap-50  justify-between xl:ps-[15px]
-        3xl:ps-0 3xl:pe-[50px]">
+ <Container>
+        <div className="mx-auto flex   justify-between ">
 
         <div className=" flex  items-center xl:gap-1 3xl:gap-3">
             <div  className=" flex items-center pt-3">
@@ -123,9 +124,10 @@ const NavbarPartTow = () => {
 
         </div>
 
-      
+        </Container>
       
     </div>
+   
   );
 };
 
