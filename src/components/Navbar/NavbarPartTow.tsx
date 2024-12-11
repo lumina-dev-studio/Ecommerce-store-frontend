@@ -28,12 +28,12 @@ const NavbarPartTow = () => {
         <div className="mx-auto flex   justify-between ">
 
         <div className=" flex  items-center xl:gap-1 3xl:gap-3">
-            <div  className=" flex items-center pt-3">
+            <div  className=" flex items-center ">
                 <div className="  rounded-full bg-white flex gap-2 p-1  items-center cursor-pointer" >
                  <div className=" w-[40px] h-[40px] rounded-full flex justify-center p-2 bg-blue-500" >
                  <RiMenuFill className=" text-white text-[25px] " />
                  </div>
-             <p className=" font-[500] pe-2 text-[15px]   ">All Categories</p>
+             <p className=" font-[500] pe-2 text-[15px] mt-2  ">All Categories</p>
                 </div>
             </div>
             <div className=" mt-3  hover:bg-blue-500/30 cursor-pointer  hover:text-blue-700 rounded-full px-2 py-2">
