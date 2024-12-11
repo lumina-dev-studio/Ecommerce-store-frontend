@@ -8,7 +8,7 @@ const SingleProductPartOneDetail = () => {
   return (
 
         <div className="  p-6  ">
-          {/* Product Title */}
+          {/* Product title */}
           <h1 className="text-[25px] font-bold text-gray-800">
             Samsung Neo QLED 55QN85A
           </h1>
