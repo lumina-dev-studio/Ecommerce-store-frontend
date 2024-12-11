@@ -2,22 +2,18 @@ import NavbarPartOne from "./NavbarPartOne";
 import NavbarPartTow from "./NavbarPartTow";
 
 
-const Navbar = ({setSmallDeviceSidebarCondition}:any) => {
+const Navbar = ({setSmallDeviceSidebarCondition}: any) => {
+    return (
 
-  return (
-
-    <div className="">
-
-   <div >
-    <NavbarPartOne setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
-    </div>
-   
-   <div className=" hidden  xl:inline">
-    <NavbarPartTow/>
-   </div>
- 
-    </div>
-  );
+        <div className="">
+            <div>
+                <NavbarPartOne setSmallDeviceSidebarCondition={setSmallDeviceSidebarCondition}/>
+            </div>
+            <div className=" hidden  xl:inline">
+                <NavbarPartTow/>
+            </div>
+        </div>
+    );
 };
 
 export default Navbar;
