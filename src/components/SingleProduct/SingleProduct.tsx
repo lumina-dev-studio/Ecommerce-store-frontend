@@ -1,3 +1,4 @@
+import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import SingleProductPartOne from "./SingleProductPartOne/SingleProductPartOne";
 import SingleProductPartThree from "./SingleProductPartThree/SingleProductPartThree";
 import SingleProductPartTwo from "./SingleProductPartTwo/SingleProductPartTwo";
@@ -8,6 +9,7 @@ const SingleProduct = () => {
       <SingleProductPartOne/>
       <SingleProductPartTwo/>
       <SingleProductPartThree/>
+      <RelatedProducts/>
     </div>
   );
 };

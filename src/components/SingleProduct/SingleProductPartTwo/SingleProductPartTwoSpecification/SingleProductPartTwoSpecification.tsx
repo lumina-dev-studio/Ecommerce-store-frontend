@@ -16,7 +16,7 @@ const SingleProductPartTwoSpecification = () => {
           </p>
           <p className="flex justify-between border-b pt-1 pb-5">
             <span className="text-gray-500">Motherboard</span>
-            <span>ATX, ITX, microATX, Mini-ITX</span>
+            <span>ATX, Mini-ITX</span>
           </p>
         </div>
       </div>

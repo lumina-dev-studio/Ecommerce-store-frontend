@@ -1,6 +1,7 @@
 'use client'
 import Container from "@/SharedComponent/Container/Container";
 import React, { useState } from "react";
+import SingleProductPartThreeReview from "./SingleProductPartThreeReview/SingleProductPartThreeReview";
 
 const SingleProductPartThree = () => {
   const [rating, setRating] = useState(0);
@@ -14,7 +15,16 @@ const SingleProductPartThree = () => {
   const [email, setEmail] = useState("");
   const [termsAccepted, setTermsAccepted] = useState(false);
 
+  const reviews = [5, 4, 5, 3, 5]; // Sample ratings
+  const totalReviews = reviews.length;
+
+  // Calculate counts for each rating
+  const ratingCounts = [5, 4, 3, 2, 1].map((rating) =>
+    reviews.filter((r) => r === rating).length
+  );
   const handleSubmit = (e:any) => {
+    
+   
     e.preventDefault();
     // Handle form submission
     console.log({
@@ -33,7 +43,10 @@ const SingleProductPartThree = () => {
 
   return (
     <Container>
-      <div className="p-6 grid grid-cols-2 gap-10 bg-white shadow-md my-10 rounded-md">
+      <div className="p-6  bg-white shadow-md my-10 rounded-md">
+        <div className="grid md:grid-cols-2 gap-10">
+
+        
         {/* Overall Rating Display */}
         <div className="mb-6 text-center">
           <h2 className="text-2xl font-semibold mb-4">Customer Reviews</h2>
@@ -41,20 +54,40 @@ const SingleProductPartThree = () => {
           <p className="text-yellow-500 text-2xl mb-2">★★★★★</p>
           <p className="text-gray-600">3 reviews</p>
 
-          <div className="mt-4">
-            {[5, 4, 3, 2, 1].map((star) => (
-              <div key={star} className="flex items-center space-x-2">
-                <p className="text-gray-800">{star} stars</p>
-                <div className="w-full h-2 bg-gray-200 rounded">
-                  <div
-                    className={star === 5 ? "h-2 bg-blue-500 rounded" : "h-2 bg-gray-200"}
-                    style={{ width: star === 5 ? "100%" : "0%" }}
-                  ></div>
-                </div>
-                <p className="text-gray-800">{star === 5 ? 3 : 0}</p>
-              </div>
-            ))}
+      
+
+<div className="w-full p-4  rounded-lg shadow-sm">
+      <h2 className="text-lg font-bold mb-4">Rating Breakdown</h2>
+      {ratingCounts.map((count, index) => {
+        const percentage = totalReviews > 0 ? (count / totalReviews) * 100 : 0;
+        return (
+          <div key={5 - index} className="flex items-center mb-2">
+            <div className="flex items-center w-20">
+              {[...Array(5 - index)].map((_, starIndex) => (
+                <svg
+                  key={starIndex}
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 text-yellow-500"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.518 4.674a1 1 0 00.95.69h4.908c.969 0 1.371 1.24.588 1.81l-3.97 2.884a1 1 0 00-.364 1.118l1.518 4.674c.3.921-.755 1.688-1.54 1.118l-3.97-2.884a1 1 0 00-1.176 0l-3.97 2.884c-.785.57-1.84-.197-1.54-1.118l1.518-4.674a1 1 0 00-.364-1.118L2.463 10.1c-.783-.57-.38-1.81.588-1.81h4.908a1 1 0 00.95-.69l1.518-4.674z" />
+                </svg>
+              ))}
+            </div>
+            <div className="flex-grow mx-4 h-3 bg-gray-200 rounded-full">
+              <div
+                className="h-3 bg-blue-500 rounded-full"
+                style={{ width: `${percentage}%` }}
+              ></div>
+            </div>
+            <span className="text-sm text-gray-600">{count}</span>
           </div>
+        );
+      })}
+    </div>
+          {/* --------------------------- */}
+
         </div>
 
         {/* Add a Review */}
@@ -81,6 +114,9 @@ const SingleProductPartThree = () => {
                 ))}
               </div>
             </div>
+
+
+
 
             {/* Value for Money */}
             <div className=" flex  gap-[15px] items-center">
@@ -220,6 +256,8 @@ const SingleProductPartThree = () => {
   
           </form>
         </div>
+        </div>
+        <SingleProductPartThreeReview/>
       </div>
     </Container>
   );

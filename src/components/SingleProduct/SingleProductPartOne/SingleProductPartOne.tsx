@@ -7,7 +7,7 @@ const SingleProductPartOne = () => {
     <Container>
 
    
-    <div className=" grid md:grid-cols-2 bg-white rounded-md shadow-md">
+    <div className=" grid lg:grid-cols-2 bg-white rounded-md shadow-md mt-20 xl:mt-10">
       <SingleProductPartOneSlider/>
       <SingleProductPartOneDetail/>
     </div>
