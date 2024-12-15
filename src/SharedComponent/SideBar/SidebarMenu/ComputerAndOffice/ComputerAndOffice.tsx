@@ -3,11 +3,12 @@ import { FaAngleRight } from "react-icons/fa6";
 import { RiMouseLine } from "react-icons/ri";
 
 const ComputerAndOffice = ({setCondition}:any) => {
+  
   const handler=()=>{
     setTimeout(() => {
       window.location.reload();
       
-    }, 200);
+    }, 500);
   }
   return (
     <div>

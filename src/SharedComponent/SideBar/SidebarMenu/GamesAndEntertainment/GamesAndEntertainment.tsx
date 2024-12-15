@@ -3,11 +3,12 @@ import { FaAngleRight } from "react-icons/fa6";
 import { IoGameControllerOutline } from "react-icons/io5";
 
 const GamesAndEntertainment = ({setCondition}:any) => {
+ 
   const handler=()=>{
     setTimeout(() => {
       window.location.reload();
       
-    }, 200);
+    }, 500);
   }
   return (
     <div>

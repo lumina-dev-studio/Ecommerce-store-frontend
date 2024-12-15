@@ -16,7 +16,8 @@ const SidebarLaptopsTabletsPcs: React.FC<SidebarLaptopsTabletsPcsProps> = ({ set
     setTimeout(() => {
       window.location.reload();
       
-    }, 200);
+    }, 500);
+    
   }
   return (
     <div>
