@@ -52,7 +52,7 @@ const BottomNavigation = ({setSmallDeviceSidebarCondition,smallDeviceSidebarCond
 
         {/* My Account Button */}
         <button type="button" className="inline-flex flex-col items-center justify-center py-3 px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <Link href='/myAccount/login' className="relative">
+          <Link href='/account/login' className="relative">
             <LiaUser className="text-gray-500 text-[25px]" />
           </Link>
           <span className="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">

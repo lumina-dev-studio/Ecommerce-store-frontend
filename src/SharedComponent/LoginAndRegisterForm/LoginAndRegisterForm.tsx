@@ -91,7 +91,7 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
              {condition==='Register'?"Register":"login"}  
             </button>
           </form>
-       {condition ==="Login"&&   <div className=" flex justify-between mt-5">
+       {condition ==="Login"&&   <div className=" md:flex justify-between mt-5 space-y-2 md:space-y-0">
             <div className=" flex items-center gap-2">
               <input type="checkbox" />
               <p className=" text-[14px] ">Remember me</p>
@@ -118,13 +118,13 @@ const LoginAndRegisterForm = ({ register, handleSubmit, onSubmit, errors,conditi
             set up for you in no time. We will only ask you for information
             necessary to make the purchase process faster and easier.
           </p>
-       {condition==='Register'&&  <Link href='/myAccount/login' className="bg-blue-100 text-blue-600 px-4 py-2 rounded">
+       {condition==='Register'&&  <Link href='/account/login' className="bg-blue-100 text-blue-600 px-4 py-2 rounded">
             Login
           </Link>} 
 
 
-         {condition==='Login'&&     <Link href='/myAccount/register' className="bg-blue-100 text-blue-600 px-4 py-2 rounded">
-          register
+         {condition==='Login'&&     <Link href='/account/register' className="bg-blue-100 text-blue-600 px-4 py-2 rounded">
+          Register
           </Link>}
 
          

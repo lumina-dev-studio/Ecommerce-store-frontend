@@ -20,7 +20,10 @@ const NavbarPartOne = ({setSmallDeviceSidebarCondition}: any) => {
                                     Mart.</Link>
                             </div>
                             <div className='col-span-2 xl:hidden  flex justify-end'>
+                               
+                                <Link href='/account/login'>
                                 <LiaUser className="text-[27px]"/>
+                                </Link>
                             </div>
                         </div>
                     </div>
