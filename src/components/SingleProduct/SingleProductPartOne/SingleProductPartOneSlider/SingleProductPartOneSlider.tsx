@@ -3,14 +3,24 @@
 import React, { useState } from 'react';
 import { FaArrowsUpDownLeftRight, FaChevronDown, FaChevronUp } from 'react-icons/fa6';
 
-const ImageGallery = () => {
+const ImageGallery = ({data}:any) => {
+
+  console.log(data?.productMediaImages,'kk')
   const images = [
     '/bannar/camera.png',
     '/bannar/headPhone.png',
     '/bannar/joypad.png',
     '/bannar/camera.png',
     '/bannar/headPhone.png',
+
+
   ];
+  data?.productMediaImages?.forEach((element:any) => {
+
+    images.push(element?.imageUrl)
+  
+});
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startIndex, setStartIndex] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });

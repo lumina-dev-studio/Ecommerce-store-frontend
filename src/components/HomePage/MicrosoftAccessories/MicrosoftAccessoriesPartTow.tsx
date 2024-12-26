@@ -1,71 +1,15 @@
-"use client";
-
-
-
-
-
-
+'use client'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css"; // Import necessary styles
 import { useRef } from "react";
 import ProductCard from "@/SharedComponent/ProductCard/ProductCard";
+import { useGetAllProdectQuery } from "@/Redux/api/Product/productApi";
 
 const MicrosoftAccessoriesPartTwo = () => {
-  const productdData = [
-    {
-      id:1,
-      images : [
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png", 
-        "/bannar/joypad.png", 
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png"
-    ],
-    price:3000 },
-    {
-      id:2,
-      images : [
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png", 
-        "/bannar/joypad.png", 
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png"
-    ],
-    price:3000 },
-    {
-      id:3,
-      images : [
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png", 
-        "/bannar/joypad.png", 
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png"
-    ],
-    price:3000 },
-    {
-      id:4,
-      images : [
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png", 
-        "/bannar/joypad.png", 
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png"
-    ],
-    price:3000 },
-    {
-      id:5,
-      images : [
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png", 
-        "/bannar/joypad.png", 
-        "/bannar/camera.png", 
-        "/bannar/headPhone.png"
-    ],
-    price:3000 },
-
-
-  ]
-      
+  const {data,isLoading}=useGetAllProdectQuery('')
+  
+  
+  const  productData=  data?.data
 
   
 
@@ -107,6 +51,11 @@ const MicrosoftAccessoriesPartTwo = () => {
     };
   
 
+    
+  if(isLoading){
+    return <>Loading...</>
+  }
+  
 
   return (
     <div>
@@ -123,7 +72,7 @@ const MicrosoftAccessoriesPartTwo = () => {
         arrows={false} // Hide the default navigation arrows
       >
         {/* Loop through the data to create carousel items */}
-        {productdData?.map(data=> <ProductCard data={data} />)}
+        {productData?.map((data:any)=> <ProductCard data={data} />)}
       </Carousel>
 
       {/* Custom Previous Button */}

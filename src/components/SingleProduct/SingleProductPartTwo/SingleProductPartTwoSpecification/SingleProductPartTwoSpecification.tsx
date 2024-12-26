@@ -1,4 +1,4 @@
-const SingleProductPartTwoSpecification = () => {
+const SingleProductPartTwoSpecification = ({data}:any) => {
   return (
     <div className="mt-10 p-4 bg-white rounded-lg h-[500px]">
       {/* Specification Heading */}

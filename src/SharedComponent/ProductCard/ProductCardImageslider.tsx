@@ -7,10 +7,12 @@ import { Card } from "@/components/ui/card";
 import Link from "next/link";
 
 const ProductCardImageslider = ({data}:any) => {
-  
-  
-    // State to track the current image
-    const [currentImage, setCurrentImage] = useState(data?.images[0]);
+    
+    console.log(data?.productMediaImages[0]?.imageUrl,'ProductCardImageslider')
+    
+    const [currentImage, setCurrentImage] = useState(data?.productMediaImages[0]?.imageUrl);
+    // const [currentImage, setCurrentImage] = useState('');
+   
 
     return (
         <div className="relative ">
@@ -49,10 +51,10 @@ const ProductCardImageslider = ({data}:any) => {
 
             {/* Button section to switch images on hover */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-around gap-2 px-4 pb-2">
-                {data?.images?.map((image:any, index:any) => (
-                     <Link href='/productCategory/singleProduct/123'
+                {data?.productMediaImages?.map((image:any, index:any) => (
+                     <Link href={`/productCategory/singleProduct/${data?.id}`}
                         key={index}
-                        onMouseEnter={() => setCurrentImage(image)} // Change image on hover
+                        onMouseEnter={() => setCurrentImage(image?.imageUrl)} // Change image on hover
                         className="w-full cursor-pointer h-[250px] opacity-0 rounded-xl bg-gray-200 hover:bg-gray-500 transition-opacity duration-300"
                         ></Link>
                 ))}
@@ -60,10 +62,10 @@ const ProductCardImageslider = ({data}:any) => {
 
             {/* Optional: You can use the below to create buttons with a visual indication for the current image */}
             <div className="absolute bottom-0 left-0 right-0 flex justify-around gap-2 px-4 pb-2">
-                {data?.images?.map((image:any, index:any) => (
-                    <Link href='/productCategory/singleProduct/123'
+                {data?.productMediaImages?.map((image:any, index:any) => (
+                    <Link href={`/productCategory/singleProduct/${data?.id}`}
                         key={index}
-                        onMouseEnter={() => setCurrentImage(image)} // Change image on hover
+                        onMouseEnter={() => setCurrentImage(image?.imageUrl)} // Change image on hover
                         className={`w-full cursor-pointer h-1 rounded-xl bg-gray-200 opacity-0 group-hover:opacity-100 hover:bg-gray-500 transition-opacity duration-300`}
                     ></Link>
                 ))}

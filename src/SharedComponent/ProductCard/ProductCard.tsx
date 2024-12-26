@@ -5,7 +5,9 @@ import ProductCardImageslider from "./ProductCardImageslider";
 import ProductCardPartTow from "./ProductCardPartTow";
 
 
-const ProductCard = ({ data }: any) => {
+const ProductCard = ({data }: any) => {
+
+  
  
   
 

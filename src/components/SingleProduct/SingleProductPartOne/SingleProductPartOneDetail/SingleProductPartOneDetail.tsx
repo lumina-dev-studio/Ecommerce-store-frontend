@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import {
   FaFacebookF,
   FaPinterest,
@@ -7,7 +8,30 @@ import { IoEyeOutline, IoShuffle } from "react-icons/io5";
 import { PiNotePencilLight } from "react-icons/pi";
 import { RiTelegramLine } from "react-icons/ri";
 
-const SingleProductPartOneDetail = () => {
+const SingleProductPartOneDetail = ({data}:any) => {
+
+  console.log(data,'jello')
+  // State for quantity
+  const [quantity, setQuantity] = useState(1);
+
+  // Unit price of the product
+  const unitPrice = data?.price;
+
+  // Function to handle quantity increase
+  const increaseQuantity = () => {
+    setQuantity((prevQuantity) => prevQuantity + 1);
+  };
+
+  // Function to handle quantity decrease
+  const decreaseQuantity = () => {
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+    }
+  };
+
+  // Calculate the total price
+  const totalPrice = unitPrice * quantity;
+
   return (
     <div className="p-6 space-y-6">
       {/* Product Title */}
@@ -41,18 +65,31 @@ const SingleProductPartOneDetail = () => {
       </div>
 
       {/* Price Section */}
-      <div className="text-3xl font-bold text-blue-600">$1,600.00</div>
+      <div className="text-3xl font-bold text-blue-600">
+        ${totalPrice.toFixed(2)}
+      </div>
 
       {/* Quantity and Buttons */}
       <div className="flex flex-wrap items-center space-y-4 lg:space-y-0 gap-4">
         <div className="flex items-center border rounded">
-          <button className="px-3 py-2 text-gray-600 border-r hover:bg-gray-100">-</button>
+          <button
+            className="px-3 py-2 text-gray-600 border-r hover:bg-gray-100"
+            onClick={decreaseQuantity}
+          >
+            -
+          </button>
           <input
             type="text"
             className="w-10 text-center outline-none"
-            defaultValue="1"
+            value={quantity}
+            readOnly
           />
-          <button className="px-3 py-2 text-gray-600 border-l hover:bg-gray-100">+</button>
+          <button
+            className="px-3 py-2 text-gray-600 border-l hover:bg-gray-100"
+            onClick={increaseQuantity}
+          >
+            +
+          </button>
         </div>
         <button className="flex-grow px-6 py-2 text-white bg-blue-600 rounded hover:bg-blue-700">
           Add To Cart
@@ -93,7 +130,7 @@ const SingleProductPartOneDetail = () => {
 
       {/* Delivery Options */}
       <div className="space-y-6 p-4 bg-white rounded-xl shadow-sm">
-        {[
+        {[ 
           {
             icon: "🏬",
             title: "Pick up from the Woodmart Store",
@@ -136,7 +173,7 @@ const SingleProductPartOneDetail = () => {
 
       {/* Warranty and Returns */}
       <div className="space-y-4 p-4 bg-white rounded-xl shadow-sm">
-        {[
+        {[ 
           {
             icon: "🛡️",
             title: "Warranty 1 year",
