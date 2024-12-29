@@ -1,6 +1,6 @@
 const SingleProductPartTwoDescription = ({data}:any) => {
 
-  console.log(data,'des')
+  
   return (
     <div className=" bg-white rounded-xl p-5 mt-10">
     <h1 className=" text-[25px] font-[600] my-5">Description </h1>

@@ -13,7 +13,7 @@ if(isLoading){
 
 const  productData=  data?.data
 
-console.log(productData,'BestOffers')
+
   
       
   return (
