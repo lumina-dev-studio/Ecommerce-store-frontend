@@ -1,5 +1,5 @@
-'use client'
-import { useGetSingleProductQuery } from "@/Redux/api/Product/productApi";
+
+
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import SingleProductPartOne from "./SingleProductPartOne/SingleProductPartOne";
 import SingleProductPartThree from "./SingleProductPartThree/SingleProductPartThree";
@@ -14,7 +14,7 @@ const SingleProduct = ({data}:any) => {
     <div>
       <SingleProductPartOne data={data}/>
       <SingleProductPartTwo data={data}/>
-      <SingleProductPartThree/>
+      <SingleProductPartThree data={data}/>
       <RelatedProducts/>
     </div>
   );
